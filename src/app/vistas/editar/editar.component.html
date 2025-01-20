@@ -1,0 +1,54 @@
+<app-header />
+
+<div class="container">
+
+    <h3>Editar Paciente</h3><br>
+
+    <form [formGroup]="editarForm" (ngSubmit)="actualizarPaciente(editarForm.value)">
+        <div class="form-group">
+            <label for="controlInpurNombre">Nombre</label>
+            <input type="text" class="form-control" placeholder="Nombre del Paciente" formControlName="nombre">
+        </div>
+        <div class="form-group">
+            <label for="controlInpurNombre">Dirección</label>
+            <input type="text" class="form-control" placeholder="Dirección del Paciente" formControlName="direccion">
+        </div>
+        <div class="form-group row">
+            <div class="col">
+                <label for="controlInpurNombre">DNI</label>
+                <input type="text" class="form-control" placeholder="DNI del Paciente" formControlName="dni">
+            </div>
+            <div class="col">
+                <label for="controlInpurNombre">Código Postal</label>
+                <input type="text" class="form-control" placeholder="Código Postal del Paciente" formControlName="codigoPostal">
+            </div>
+            <div class="col">
+                <label for="controlInpurNombre">Teléfono</label>
+                <input type="text" class="form-control" placeholder="Teléfono del Paciente" formControlName="telefono">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col">
+                <label for="controlInpurNombre">Fecha Nacimiento</label>
+                <input type="text" class="form-control" placeholder="Fecha de Nacimiento del Paciente" formControlName="fechaNacimiento">
+            </div>
+            <div class="col">
+                <label for="controlInpurNombre">Correo</label>
+                <input type="text" class="form-control" placeholder="Correo del Paciente" formControlName="correo">
+            </div>
+            <div class="col">
+                <label for="controlInpurNombre">Género</label>
+                <input type="text" class="form-control" placeholder="Género" formControlName="genero">
+            </div>
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        <button type="button" class="btn btn-danger" (click)="eliminarPaciente(editarForm.value)">Eliminar</button>
+        <button type="button" class="btn btn-secondary" (click)="volver()">Volver</button>
+
+    </form>
+
+
+</div>
+
+<app-footer />

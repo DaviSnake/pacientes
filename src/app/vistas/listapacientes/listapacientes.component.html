@@ -1,0 +1,33 @@
+<app-header />
+<div class="container">
+
+  <h3>Lista de Pacientes</h3><br>
+
+  <button type="button" class="btn btn-primary" (click)="nuevoPaciente()">Nuevo Paciente</button>
+
+  <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">DNI</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Correo</th>
+        </tr>
+      </thead>
+      <tbody>
+      @for (paciente of listaPacientes; track paciente.PacienteId) {
+          <tr (click)="editarPaciente(paciente.PacienteId)">
+            <th scope="row">{{paciente.PacienteId}}</th>
+            <td>{{paciente.Nombre}}</td>
+            <td>{{paciente.DNI}}</td>
+            <td>{{paciente.Telefono}}</td>
+            <td>{{paciente.Correo}}</td>
+          </tr>
+      }      
+      </tbody>
+
+  </table>
+</div>
+
+<app-footer />
