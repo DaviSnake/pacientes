@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "pacienteV2:build:production"
+              "buildTarget": "paciente:build:production"
             },
             "development": {
-              "buildTarget": "pacienteV2:build:development"
+              "buildTarget": "paciente:build:development"
             }
           },
           "defaultConfiguration": "development"
