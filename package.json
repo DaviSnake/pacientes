@@ -7,7 +7,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+<<<<<<< HEAD
     "serve:ssr:paciente": "node dist/paciente/server/server.mjs"
+=======
+    "serve:ssr:pacienteV2": "node dist/paciente/server/server.mjs"
+>>>>>>> 8b1054af428eca9f3294f079ba5bdc4f6e8458ee
   },
   "private": true,
   "dependencies": {
