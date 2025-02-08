@@ -1,5 +1,5 @@
 {
-  "name": "paciente-v2",
+  "name": "paciente",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:pacienteV2": "node dist/paciente-v2/server/server.mjs"
+    "serve:ssr:pacienteV2": "node dist/paciente/server/server.mjs"
   },
   "private": true,
   "dependencies": {
